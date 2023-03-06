@@ -1,21 +1,31 @@
 .App {
+  margin: 2em auto;
+  max-width: 1200px;
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: stretch;
   color: #444;
 }
 
 h2 {
-  margin: 0.2em 0;
+  margin: 1em 0;
+  align-self: center;
 }
 
 .title {
   font-weight: 600;
 }
 
-.container {
+.itemContainer {
   display: flex;
   flex-direction: column;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+.itemHeader {
+  padding: 1.3em;
+  background-color: #f6f8fa;
 }
 
 .issue {
@@ -23,7 +33,7 @@ h2 {
   grid-template-columns: 2em 1fr 2.5em;
   padding: 0.3em;
   /* top | left and right | bottom */
-  border-width: 1px 1px 0;
+  border-width: 1px 0 0;
   border-style: solid;
   border-color: #ddd;
 }
@@ -62,4 +72,9 @@ h2 {
   font-size: 0.8em;
   vertical-align: top;
   padding: 0.2em 0;
+}
+
+.pages {
+  margin: 1em;
+  align-self: center;
 }

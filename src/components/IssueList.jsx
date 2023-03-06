@@ -3,7 +3,8 @@ import GithubIssue from "./GithubIssue.jsx";
 
 export default ({ issues }) => {
     return (
-        <div className="container">
+        <div className="itemContainer">
+            <div className="itemHeader">xxx open issues</div>
             {issues.map((issue) => <GithubIssue key={issue.id} issue={issue} />)}
         </div>
     );
