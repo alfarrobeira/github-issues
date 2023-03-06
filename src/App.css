@@ -5,8 +5,12 @@
   color: #444;
 }
 
-h2, h4 {
+h2 {
   margin: 0.2em 0;
+}
+
+.title {
+  font-weight: 600;
 }
 
 .container {
@@ -15,6 +19,8 @@ h2, h4 {
 }
 
 .issue {
+  display: grid;
+  grid-template-columns: 2em 1fr 2.5em;
   padding: 0.3em;
   /* top | left and right | bottom */
   border-width: 1px 1px 0;
@@ -26,7 +32,34 @@ h2, h4 {
   background-color: #f6f8fa;
 }
 
+.issue button {
+  margin: 0 0.2em;
+  padding: 0.2em 0.5em;
+  border-radius: 20px;
+  border-style: none;
+}
+
+.issue a {
+  text-decoration: none;
+  color: #444;
+}
+
 .issue p {
   margin: 0.2em;
   font-size: 0.8em;
+}
+
+.octicon {
+  padding: 0.3em 0.5em;
+  fill: #444;
+}
+
+.octicon-issue-opened {
+  fill: #1a7f37;
+}
+
+.text-small {
+  font-size: 0.8em;
+  vertical-align: top;
+  padding: 0.2em 0;
 }

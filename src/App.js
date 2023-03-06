@@ -9,7 +9,7 @@ const App = () => {
   // Octokit.js
   // https://github.com/octokit/core.js#readme
   const octokit = new Octokit({
-    auth: "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",
+    auth: "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",
   });
 
   // runs on first mount
@@ -19,14 +19,21 @@ const App = () => {
 
   // fetch issues from GitHub
   const getIssues = async () => {
-    const response = await octokit.request("GET /repos/{owner}/{repo}/issues", {
-      owner: "facebook",
-      repo: "create-react-app",
-      since: "2023-02-01T08:00:00Z",
-      page: 1,
-    });
-    console.log(response.data);
-    setIssues(response.data);
+    try {
+      const response = await octokit.request(
+        "GET /repos/{owner}/{repo}/issues",
+        {
+          owner: "facebook",
+          repo: "create-react-app",
+          since: "2023-02-01T08:00:00Z",
+          page: 1,
+        }
+      );
+      console.log(response.data);
+      setIssues(response.data);
+    } catch (ex) {
+      console.log(ex);
+    }
   };
 
   return (
