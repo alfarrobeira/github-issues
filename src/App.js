@@ -3,6 +3,7 @@ import { Octokit } from "@octokit/core";
 import "./App.css";
 import IssueList from "./components/IssueList";
 import Pagination from "@mui/material/Pagination";
+import { TOKEN } from "./components/Token.jsx";
 
 const App = () => {
   const [issues, setIssues] = useState([]);
@@ -11,7 +12,7 @@ const App = () => {
   // Octokit.js
   // https://github.com/octokit/core.js#readme
   const octokit = new Octokit({
-    auth: "",
+    auth: TOKEN,
   });
 
   // runs on first mount
