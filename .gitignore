@@ -2,7 +2,7 @@
 
 #octokit authentication token
 #(will be revoked if pushed to GitHub)
-/components/Token.jsx
+src/components/Token.jsx
 
 # dependencies
 /node_modules
