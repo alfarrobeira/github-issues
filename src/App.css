@@ -78,3 +78,13 @@ h2 {
   margin: 1em;
   align-self: center;
 }
+
+.openCount {
+  font-weight: 600;
+  font-size: 0.9em;
+  margin: 1em;
+}
+
+.closedCount {
+  font-size:0.9em;
+}
