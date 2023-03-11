@@ -78,7 +78,7 @@ const App = () => {
       />
       <Pagination
         className="pages"
-        count={Math.floor(openIssuesCount / issuesPerPage)}
+        count={Math.ceil(openIssuesCount / issuesPerPage)}
         page={page}
         onChange={(e, val) => setPage(val)}
         showFirstButton
